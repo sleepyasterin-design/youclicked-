@@ -29,15 +29,11 @@ $(".heart").on('webkitAnimationEnd oanimationend msAnimationEnd animationend', f
 	$(".heart").removeClass("openHer").removeClass("closeHer");
 
 });
-// visitor counter
-fetch('https://api.countapi.xyz/hit/valentine-confession-12345/visits
-')
+fetch('https://counterapi.dev/hit/ut_2V9QJASYV0GPgsn5Peqyqh5WUsfn1Jsk4zxo5Ghe/visits')
   .then(res => res.json())
   .then(data => {
     document.getElementById('visitor-count').innerText = data.value;
   });
-
-
 
 
 
