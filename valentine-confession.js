@@ -27,4 +27,11 @@ $(".heart").on('webkitAnimationEnd oanimationend msAnimationEnd animationend', f
 	else
 		$(".heart").addClass("no-anim").removeClass("beating");
 	$(".heart").removeClass("openHer").removeClass("closeHer");
+
 });
+fetch('https://api.countapi.xyz/hit/your-website-name/visits')
+    .then(res => res.json())
+    .then(data => {
+      document.getElementById('visitor-count').innerText = data.value;
+    });
+
