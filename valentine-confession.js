@@ -29,10 +29,11 @@ $(".heart").on('webkitAnimationEnd oanimationend msAnimationEnd animationend', f
 	$(".heart").removeClass("openHer").removeClass("closeHer");
 
 });
-fetch('https://api.countapi.xyz/hit/valentineconfession2025/visits')
+fetch('ut_2V9QJASYV0GPgsn5Peqyqh5WUsfn1Jsk4zxo5Ghe')
   .then(res => res.json())
   .then(data => {
     document.getElementById('visitor-count').innerText = data.value;
   });
+
 
 
