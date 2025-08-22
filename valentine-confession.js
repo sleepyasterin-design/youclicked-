@@ -30,11 +30,13 @@ $(".heart").on('webkitAnimationEnd oanimationend msAnimationEnd animationend', f
 
 });
 // visitor counter
-fetch('https://api.countapi.xyz/hit/valentine-confession-page/visits')
+fetch('https://api.countapi.xyz/hit/valentine-confession-12345/visits
+')
   .then(res => res.json())
   .then(data => {
     document.getElementById('visitor-count').innerText = data.value;
   });
+
 
 
 
