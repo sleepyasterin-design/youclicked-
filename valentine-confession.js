@@ -68,7 +68,3 @@ fetch('https://counterapi.dev/hit/ut_2V9QJASYV0GPgsn5Peqyqh5WUsfn1Jsk4zxo5Ghe/vi
   .then(data => {
     document.getElementById('visitor-count').innerText = data.value;
   });
-document.getElementById('resetBtn').addEventListener('click', () => {
-    localStorage.removeItem('usernameEntered');
-    location.reload(); // refresh to show form again
-});
