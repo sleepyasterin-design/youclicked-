@@ -64,7 +64,8 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    width: 350px;
+    width: 90%;       /* smaller on mobile automatically */
+    max-width: 350px; /* keeps it rectangular on desktop */
     padding: 30px 20px;
     background: rgba(255, 255, 255, 0.85);
     border-radius: 8px;
@@ -73,11 +74,12 @@
     z-index: 9999;
 }
 
-/* Media queries for responsive behavior */
+/* Mobile tweaks */
 @media (max-width: 768px) {
     .name-card {
-        position: absolute; /* mobile-friendly */
-        top: 30%; /* tweak vertical placement */
+        width: 90%;          /* responsive width */
+        top: 50%;            /* stay centered vertically */
+        transform: translate(-50%, -50%); /* perfect center */
     }
 }
 
@@ -280,4 +282,5 @@ body {
 	top: 85%;
 	transform: translate(-50%, 0);
 }
+
 
