@@ -58,6 +58,35 @@
     background: #ec6c9a; /* darker pink on hover for depth */
 }
 ; /* slightly brighter on hover */	
+/* Your existing name-card styles */
+.name-card {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 350px;
+    padding: 30px 20px;
+    background: rgba(255, 255, 255, 0.85);
+    border-radius: 8px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.25);
+    text-align: center;
+    z-index: 9999;
+}
+
+/* Media queries for responsive behavior */
+@media (max-width: 768px) {
+    .name-card {
+        position: absolute; /* mobile-friendly */
+        top: 30%; /* tweak vertical placement */
+    }
+}
+
+@media (min-width: 769px) {
+    .name-card {
+        position: fixed; /* desktop stays fixed */
+        top: 50%;
+    }
+}
 
 
 
@@ -251,3 +280,4 @@ body {
 	top: 85%;
 	transform: translate(-50%, 0);
 }
+
